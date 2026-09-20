@@ -110,14 +110,30 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
 .trust-item p { max-width: 300px; margin: 0; color: rgba(29,43,38,.7); font-size: 13px; }
 
 .contact { padding-top: 55px; background: var(--paper); }
-.contact-card { position: relative; overflow: hidden; padding: 57px 25px 53px; background: var(--green); color: var(--paper); text-align: center; }
+.contact-card { position: relative; overflow: hidden; padding: 57px 25px 53px; background: var(--green); color: var(--paper); }
+.contact-layout { display: grid; gap: 38px; }
+.contact-copy { text-align: center; }
 .contact-card .section-label { justify-content: center; color: var(--lime); }
 .contact-card .section-label span { color: rgba(217,239,155,.65); }
 .contact-card h2 { margin: 22px 0 20px; font-size: clamp(3.2rem, 14vw, 6rem); }
 .contact-card h2 em { color: var(--lime); }
-.contact-card > p:not(.handle) { max-width: 390px; margin: 0 auto 26px; color: rgba(255,253,248,.72); font-size: 14px; }
+.contact-copy > p:not(.handle):not(.email-note) { max-width: 390px; margin: 0 auto 26px; color: rgba(255,253,248,.72); font-size: 14px; }
 .contact-card .button { position: relative; z-index: 1; }
-.handle { margin: 22px 0 0; color: rgba(255,253,248,.55); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.contact-options { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.button-outline { border: 1px solid rgba(255,253,248,.55); color: var(--paper); }
+.email-link { display: inline-block; margin-top: 18px; color: var(--lime); font-size: 13px; font-weight: 800; text-underline-offset: 3px; }
+.email-note { margin: 6px 0 0; color: rgba(255,253,248,.48); font-size: 10px; }
+.handle { margin: 17px 0 0; color: rgba(255,253,248,.55); font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.booking-form { padding: 23px 20px 20px; background: var(--paper); color: var(--ink); text-align: left; }
+.form-row { margin-bottom: 16px; }
+.form-row-half { display: grid; gap: 16px; }
+.booking-form label { display: block; margin-bottom: 6px; color: var(--green); font-size: 10px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.booking-form label span { color: var(--muted); font-weight: 500; letter-spacing: 0; text-transform: none; }
+.booking-form input, .booking-form select, .booking-form textarea { width: 100%; border: 1px solid var(--line); border-radius: 2px; background: var(--paper); color: var(--ink); font: inherit; font-size: 14px; padding: 11px 12px; }
+.booking-form input:focus, .booking-form select:focus, .booking-form textarea:focus { outline: 2px solid var(--lime); outline-offset: 1px; border-color: var(--green); }
+.booking-form textarea { min-height: 100px; resize: vertical; }
+.form-submit { width: 100%; border: 0; cursor: pointer; }
+.form-note { margin: 11px 0 0; color: var(--muted); font-size: 10px; text-align: center; }
 .contact-paws { position: absolute; top: 20px; right: 23px; color: rgba(217,239,155,.65); font-size: 18px; transform: rotate(13deg); }
 
 .site-footer { padding: 35px 0 95px; background: var(--paper); }
@@ -148,6 +164,13 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
   .trust-grid { grid-template-columns: repeat(3, 1fr); gap: 28px; }
   .trust-item { border-bottom: 0; }
   .contact-card { padding: 80px 30px 74px; }
+  .contact-layout { grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: center; }
+  .contact-copy { text-align: left; }
+  .contact-card .section-label { justify-content: flex-start; }
+  .contact-copy > p:not(.handle):not(.email-note) { margin-left: 0; }
+  .contact-options { justify-content: flex-start; }
+  .booking-form { padding: 27px 25px 22px; }
+  .form-row-half { grid-template-columns: 1fr 1fr; }
   .site-footer { padding-bottom: 45px; }
   .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; align-items: start; }
   .footer-bottom { grid-column: 1 / -1; }

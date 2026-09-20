@@ -28,9 +28,9 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-dot"></span> Dog walking in Boroondara</p>
           <h1>Good walks.<br><span>Happy tails.</span></h1>
-          <p class="hero-intro">Thoughtful one-to-one dog walks for the leafy streets and parks of Melbourne's inner east.</p>
+          <p class="hero-intro">Thoughtful one-to-one dog walks for the leafy streets and parks of Melbourne's inner east. Reach out on Instagram or email to book.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://www.instagram.com/littlepawswalks/" target="_blank" rel="noopener noreferrer">Message on Instagram <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#contact">Book a walk <span aria-hidden="true">↘</span></a>
             <a class="text-link" href="#services">See walk options <span aria-hidden="true">↓</span></a>
           </div>
           <div class="hero-note"><span class="note-check" aria-hidden="true">✓</span> Local Boroondara walker · photo updates welcome</div>
@@ -86,7 +86,7 @@
             <a class="card-link" href="https://www.instagram.com/littlepawswalks/" target="_blank" rel="noopener noreferrer">Book this walk <span aria-hidden="true">↗</span></a>
           </article>
         </div>
-        <p class="pricing-note">All walks are one-to-one. Message on Instagram to check availability and say hello.</p>
+        <p class="pricing-note">All walks are one-to-one. Message us on Instagram or email hello@littlepawswalks.com to check availability.</p>
       </div>
     </section>
 
@@ -121,11 +121,55 @@
     <section class="contact section-pad" id="contact">
       <div class="container contact-card">
         <div class="contact-paws" aria-hidden="true">✦ &nbsp; ♡ &nbsp; ✦</div>
-        <div class="section-label">05 <span>Come say hello</span></div>
-        <h2>Ready for a<br><em>better walk?</em></h2>
-        <p>Send a message on Instagram with your suburb, your dog's name, and which walk length sounds right.</p>
-        <a class="button button-light" href="https://www.instagram.com/littlepawswalks/" target="_blank" rel="noopener noreferrer">Message @littlepawswalks <span aria-hidden="true">↗</span></a>
-        <p class="handle">@littlepawswalks</p>
+        <div class="contact-layout">
+          <div class="contact-copy">
+            <div class="section-label">05 <span>Come say hello</span></div>
+            <h2>Ready for a<br><em>better walk?</em></h2>
+            <p>Send a message on Instagram or use the form to email us your suburb, your dog's name, and which walk length sounds right.</p>
+            <div class="contact-options">
+              <a class="button button-light" href="https://www.instagram.com/littlepawswalks/" target="_blank" rel="noopener noreferrer">Message @littlepawswalks <span aria-hidden="true">↗</span></a>
+              <a class="button button-outline" href="mailto:hello@littlepawswalks.com">Email us <span aria-hidden="true">↗</span></a>
+            </div>
+            <a class="email-link" href="mailto:hello@littlepawswalks.com">hello@littlepawswalks.com</a>
+            <p class="email-note">Placeholder email — swap this address later.</p>
+            <p class="handle">@littlepawswalks</p>
+          </div>
+
+          <form class="booking-form" id="booking-form">
+            <div class="form-row">
+              <label for="name">Your name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-row form-row-half">
+              <div>
+                <label for="suburb">Suburb</label>
+                <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required>
+              </div>
+              <div>
+                <label for="dog-name">Dog's name</label>
+                <input id="dog-name" name="dog-name" type="text" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="walk-length">Walk length</label>
+              <select id="walk-length" name="walk-length" required>
+                <option value="" selected disabled>Select a walk length</option>
+                <option value="30 minutes">30 minutes</option>
+                <option value="1 hour">1 hour</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message <span>(optional)</span></label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button class="button button-light form-submit" type="submit">Open email draft <span aria-hidden="true">↗</span></button>
+            <p class="form-note">Your email app will open with the details filled in.</p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
@@ -138,6 +182,25 @@
     </div>
   </footer>
 
-  <div class="sticky-cta"><a href="https://www.instagram.com/littlepawswalks/" target="_blank" rel="noopener noreferrer">Message on Instagram <span aria-hidden="true">↗</span></a></div>
+  <div class="sticky-cta"><a href="#contact">Book a walk <span aria-hidden="true">↘</span></a></div>
+
+  <script>
+    document.getElementById('booking-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      const name = data.get('name');
+      const subject = `Booking enquiry from ${name || 'Little Paws Walks website'}`;
+      const body = [
+        `Name: ${name}`,
+        `Email: ${data.get('email')}`,
+        `Suburb: ${data.get('suburb')}`,
+        `Dog's name: ${data.get('dog-name')}`,
+        `Walk length: ${data.get('walk-length')}`,
+        '',
+        `Message: ${data.get('message') || ''}`
+      ].join('\n');
+      window.location.href = `mailto:hello@littlepawswalks.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
 </body>
 </html>
