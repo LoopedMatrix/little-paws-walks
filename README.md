@@ -12,7 +12,7 @@ Open `index.html` directly in a browser to preview it. No build step is required
 
 ## Editing the site
 
-- To change prices, edit the two `price` blocks in `index.html` (currently `$30 AUD` and `$50 AUD`). Update the matching service descriptions if needed.
+- To change prices, edit the two `price` blocks in `index.html` (currently `$50 AUD` and `$80 AUD`). Update the matching service descriptions if needed.
 - To change wording, edit the text in the relevant section of `index.html`.
 - The Instagram CTA and handle currently point to `https://www.instagram.com/littlepawswalks/` and `@littlepawswalks`. The Instagram account will be created; update these links when it is live.
 - The booking form opens an email draft to the placeholder address `hello@littlepawswalks.com`. To replace the placeholder email later, search for `hello@littlepawswalks.com` and update every occurrence in `index.html` and this README.
