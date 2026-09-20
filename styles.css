@@ -91,7 +91,8 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
 .price span { font-size: 10px; font-weight: 800; letter-spacing: .08em; opacity: .65; }
 .card-link { display: flex; justify-content: space-between; margin-top: 23px; padding-top: 15px; border-top: 1px solid currentColor; opacity: .85; }
 .card-link span { font-size: 16px; font-weight: 400; }
-.pricing-note { margin: 21px 0 0; color: rgba(255,253,248,.62); font-size: 11px; }
+.pricing-note { margin: 21px 0 0; color: rgba(255,253,248,.72); font-size: 11px; }
+.pricing-note strong { color: var(--lime); font-weight: 800; }
 
 .area { background: var(--paper); }
 .area-grid { display: grid; gap: 42px; align-items: center; }

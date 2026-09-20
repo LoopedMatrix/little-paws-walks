@@ -86,7 +86,7 @@
             <a class="card-link" href="https://www.instagram.com/littlepawswalks/" target="_blank" rel="noopener noreferrer">Book this walk <span aria-hidden="true">↗</span></a>
           </article>
         </div>
-        <p class="pricing-note">All walks are one on one. Message us on Instagram or email hello@littlepawswalks.com to check availability.</p>
+        <p class="pricing-note"><strong>+$10 AUD per additional pet on the same walk.</strong> All walks are one on one. Message us on Instagram or email hello@littlepawswalks.com to check availability.</p>
       </div>
     </section>
 
@@ -125,7 +125,7 @@
           <div class="contact-copy">
             <div class="section-label">05 <span>Come say hello</span></div>
             <h2>Ready for a<br><em>better walk?</em></h2>
-            <p>Send a message on Instagram or use the form to email us your suburb, your dog's name, and which walk length sounds right.</p>
+            <p>Send a message on Instagram or use the form to tell us about your pets, your suburb, and how we can personalise the walk for them.</p>
             <div class="contact-options">
               <a class="button button-light" href="https://www.instagram.com/littlepawswalks/" target="_blank" rel="noopener noreferrer">Message @littlepawswalks <span aria-hidden="true">↗</span></a>
               <a class="button button-outline" href="mailto:hello@littlepawswalks.com">Email us <span aria-hidden="true">↗</span></a>
@@ -144,29 +144,55 @@
               <label for="email">Email</label>
               <input id="email" name="email" type="email" autocomplete="email" required>
             </div>
+            <div class="form-row">
+              <label for="suburb">Suburb</label>
+              <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required>
+            </div>
+            <div class="form-row">
+              <label for="pet-names">Pet name(s)</label>
+              <input id="pet-names" name="pet-names" type="text" placeholder="Buddy, or Buddy &amp; Luna" required>
+            </div>
             <div class="form-row form-row-half">
               <div>
-                <label for="suburb">Suburb</label>
-                <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required>
+                <label for="ages">Age(s)</label>
+                <input id="ages" name="ages" type="text" placeholder="e.g. 4 years, 2 years" required>
               </div>
               <div>
-                <label for="dog-name">Dog's name</label>
-                <input id="dog-name" name="dog-name" type="text" required>
+                <label for="favourite-snacks">Favourite snacks <span>(optional)</span></label>
+                <input id="favourite-snacks" name="favourite-snacks" type="text" placeholder="Chicken, treats...">
+              </div>
+            </div>
+            <div class="form-row form-row-half">
+              <div>
+                <label for="walk-length">Walk length</label>
+                <select id="walk-length" name="walk-length" required>
+                  <option value="" selected disabled>Select a walk length</option>
+                  <option value="30 minutes">30 minutes</option>
+                  <option value="1 hour">1 hour</option>
+                </select>
+              </div>
+              <div>
+                <label for="preferred-time">Preferred walk time</label>
+                <select id="preferred-time" name="preferred-time" required>
+                  <option value="" selected disabled>Choose a time</option>
+                  <option value="Morning">Morning</option>
+                  <option value="Midday">Midday</option>
+                  <option value="Afternoon">Afternoon</option>
+                  <option value="Evening">Evening</option>
+                  <option value="Flexible">Flexible</option>
+                </select>
               </div>
             </div>
             <div class="form-row">
-              <label for="walk-length">Walk length</label>
-              <select id="walk-length" name="walk-length" required>
-                <option value="" selected disabled>Select a walk length</option>
-                <option value="30 minutes">30 minutes</option>
-                <option value="1 hour">1 hour</option>
-              </select>
+              <label for="extra-pets">Extra pets <span>(optional, beyond the first)</span></label>
+              <input id="extra-pets" name="extra-pets" type="number" min="0" step="1" placeholder="0">
             </div>
             <div class="form-row">
               <label for="message">Message <span>(optional)</span></label>
-              <textarea id="message" name="message" rows="4"></textarea>
+              <textarea id="message" name="message" rows="4" placeholder="Anything that will help us personalise the walk?"></textarea>
             </div>
             <button class="button button-light form-submit" type="submit">Open email draft <span aria-hidden="true">↗</span></button>
+            <p class="form-note">+$10 per additional pet on the same walk.</p>
             <p class="form-note">Your email app will open with the details filled in.</p>
           </form>
         </div>
@@ -194,8 +220,12 @@
         `Name: ${name}`,
         `Email: ${data.get('email')}`,
         `Suburb: ${data.get('suburb')}`,
-        `Dog's name: ${data.get('dog-name')}`,
+        `Pet name(s): ${data.get('pet-names')}`,
+        `Age(s): ${data.get('ages')}`,
+        `Favourite snacks: ${data.get('favourite-snacks') || ''}`,
+        `Preferred walk time: ${data.get('preferred-time')}`,
         `Walk length: ${data.get('walk-length')}`,
+        `Extra pets: ${data.get('extra-pets') || '0'}`,
         '',
         `Message: ${data.get('message') || ''}`
       ].join('\n');
