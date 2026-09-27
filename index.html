@@ -6,6 +6,14 @@
   <meta name="description" content="One on one dog walks around Boroondara. Little Paws Walks offers 30-minute and 1-hour walks in Melbourne's inner east.">
   <title>Little Paws Walks | Dog walking in Boroondara</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Little Paws Walks | Dog walking in Boroondara">
+  <meta property="og:description" content="One on one dog walks around Boroondara. 30-minute and 1-hour walks in Melbourne's inner east.">
+  <meta property="og:image" content="assets/dog-on-walk.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -37,7 +45,7 @@
         </div>
         <div class="hero-visual">
           <div class="hero-image-wrap">
-            <img src="assets/dog-on-walk.jpg" alt="Dog enjoying a walk outdoors" width="1400" height="933">
+            <img src="assets/dog-on-walk.jpg" alt="A dog walking outdoors on a tree-lined suburban street" width="1400" height="933">
           </div>
           <div class="photo-note"><span class="photo-note-icon" aria-hidden="true">✦</span><span>Room to sniff<br><strong>time to be a dog</strong></span></div>
           <div class="hero-sticker" aria-hidden="true"><span>made for</span><strong>good<br>dogs</strong><span>♡</span></div>
@@ -52,6 +60,7 @@
           <h2>Small walks, <em>big</em> joy.</h2>
           <p>Little Paws Walks is a local dog-walking service for pups who love a little fresh air, a good sniff, and a calm companion by their side.</p>
           <p>Every walk is one on one, with a pace that suits your dog. Reliable, friendly, and close to home in Boroondara.</p>
+          <img class="about-image" src="assets/happy-dog.jpg" alt="A happy dog sitting outdoors after a walk" width="720" height="480" loading="lazy">
           <a class="arrow-link" href="#contact">Let's go for a walk <span aria-hidden="true">→</span></a>
         </div>
         <div class="about-aside">
@@ -114,6 +123,31 @@
           <div class="trust-item"><span class="trust-icon" aria-hidden="true">♡</span><h3>One on one care</h3><p>No group shuffle. Your dog gets a walk shaped around their pace and personality.</p></div>
           <div class="trust-item"><span class="trust-icon" aria-hidden="true">✺</span><h3>Local & reliable</h3><p>A familiar local walker for the everyday routine your dog can count on.</p></div>
           <div class="trust-item"><span class="trust-icon" aria-hidden="true">⌁</span><h3>Photo updates</h3><p>Happy to send a little photo update so you can see how the walk is going.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="container">
+        <div class="section-label">06 <span>Questions, answered</span></div>
+        <h2>Good questions.<br><em>straight answers.</em></h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>How much does a dog walk cost in Boroondara?</h3>
+            <p>A 30-minute walk is $50 AUD and a 1-hour walk is $80 AUD, per dog. An additional pet on the same walk is $10 AUD each.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Which suburbs do you cover?</h3>
+            <p>We walk in the City of Boroondara and nearby — Hawthorn, Kew, Camberwell, Canterbury, Surrey Hills, Balwyn, Glen Iris, Hawthorn East, Mont Albert, and the streets around them.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do you walk more than one dog at a time?</h3>
+            <p>Every walk is one on one. If you have more than one dog, they can join the same walk for an extra $10 AUD each — still one walker, still focused on your pets.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How do I book a walk?</h3>
+            <p>Send a message on Instagram or use the form on this page to tell us about your dog and pick a day and time. We'll reply to confirm availability and get to know your pup.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -251,6 +285,57 @@
         window.location.href = `mailto:hello@littlepawswalks.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       });
     })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Little Paws Walks",
+    "description": "One on one dog walking service in the City of Boroondara, Melbourne.",
+    "url": "",
+    "serviceArea": {
+      "@type": "City",
+      "name": "Boroondara",
+      "address": {
+        "@type": "City",
+        "addressLocality": "Boroondara",
+        "addressRegion": "VIC",
+        "addressCountry": "AU"
+      }
+    },
+    "areaServed": ["Hawthorn", "Kew", "Camberwell", "Canterbury", "Surrey Hills", "Balwyn", "Glen Iris", "Hawthorn East", "Mont Albert"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dog walk options",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "30-minute dog walk",
+            "description": "A refreshing neighbourhood wander with time to sniff, stretch, and reset."
+          },
+          "price": "50",
+          "priceCurrency": "AUD",
+          "duration": "PT30M"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "1-hour dog walk",
+            "description": "A longer outing for curious pups who like to take the scenic route."
+          },
+          "price": "80",
+          "priceCurrency": "AUD",
+          "duration": "PT1H"
+        }
+      ]
+    },
+    "priceRange": "$$",
+    "image": "assets/dog-on-walk.jpg",
+    "knowsAbout": ["Dog walking", "Dog care", "Pet services", "Boroondara", "Melbourne inner east"]
+  }
   </script>
 </body>
 </html>

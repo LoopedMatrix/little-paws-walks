@@ -1,0 +1,17 @@
+{
+  "name": "Little Paws Walks",
+  "short_name": "Little Paws",
+  "description": "One on one dog walking in the City of Boroondara, Melbourne.",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2f5946",
+  "background_color": "#f6f2e9",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
