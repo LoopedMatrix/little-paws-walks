@@ -172,20 +172,33 @@
                 </select>
               </div>
               <div>
+                <label for="preferred-date">Preferred day</label>
+                <input id="preferred-date" name="preferred-date" type="date" required>
+              </div>
+            </div>
+            <div class="form-row form-row-half">
+              <div>
                 <label for="preferred-time">Preferred walk time</label>
                 <select id="preferred-time" name="preferred-time" required>
                   <option value="" selected disabled>Choose a time</option>
-                  <option value="Morning">Morning</option>
-                  <option value="Midday">Midday</option>
-                  <option value="Afternoon">Afternoon</option>
-                  <option value="Evening">Evening</option>
+                  <option value="8:00 AM">8:00 AM</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="3:00 PM">3:00 PM</option>
+                  <option value="4:00 PM">4:00 PM</option>
+                  <option value="5:00 PM">5:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
                   <option value="Flexible">Flexible</option>
                 </select>
               </div>
-            </div>
-            <div class="form-row">
-              <label for="extra-pets">Extra pets <span>(optional, beyond the first)</span></label>
-              <input id="extra-pets" name="extra-pets" type="number" min="0" step="1" placeholder="0">
+              <div>
+                <label for="extra-pets">Extra pets <span>(optional, beyond the first)</span></label>
+                <input id="extra-pets" name="extra-pets" type="number" min="0" step="1" placeholder="0">
+              </div>
             </div>
             <div class="form-row">
               <label for="message">Message <span>(optional)</span></label>
@@ -211,26 +224,33 @@
   <div class="sticky-cta"><a href="#contact">Book a walk <span aria-hidden="true">↘</span></a></div>
 
   <script>
-    document.getElementById('booking-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const data = new FormData(event.currentTarget);
-      const name = data.get('name');
-      const subject = `Booking enquiry from ${name || 'Little Paws Walks website'}`;
-      const body = [
-        `Name: ${name}`,
-        `Email: ${data.get('email')}`,
-        `Suburb: ${data.get('suburb')}`,
-        `Pet name(s): ${data.get('pet-names')}`,
-        `Age(s): ${data.get('ages')}`,
-        `Favourite snacks: ${data.get('favourite-snacks') || ''}`,
-        `Preferred walk time: ${data.get('preferred-time')}`,
-        `Walk length: ${data.get('walk-length')}`,
-        `Extra pets: ${data.get('extra-pets') || '0'}`,
-        '',
-        `Message: ${data.get('message') || ''}`
-      ].join('\n');
-      window.location.href = `mailto:hello@littlepawswalks.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
+    (function () {
+      const dateInput = document.getElementById('preferred-date');
+      if (dateInput) {
+        dateInput.min = new Date().toISOString().split('T')[0];
+      }
+      document.getElementById('booking-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        const name = data.get('name');
+        const subject = `Booking enquiry from ${name || 'Little Paws Walks website'}`;
+        const body = [
+          `Name: ${name}`,
+          `Email: ${data.get('email')}`,
+          `Suburb: ${data.get('suburb')}`,
+          `Pet name(s): ${data.get('pet-names')}`,
+          `Age(s): ${data.get('ages')}`,
+          `Favourite snacks: ${data.get('favourite-snacks') || ''}`,
+          `Preferred day: ${data.get('preferred-date') || ''}`,
+          `Preferred walk time: ${data.get('preferred-time')}`,
+          `Walk length: ${data.get('walk-length')}`,
+          `Extra pets: ${data.get('extra-pets') || '0'}`,
+          '',
+          `Message: ${data.get('message') || ''}`
+        ].join('\n');
+        window.location.href = `mailto:hello@littlepawswalks.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    })();
   </script>
 </body>
 </html>
