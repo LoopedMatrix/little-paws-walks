@@ -15,7 +15,9 @@ Open `index.html` directly in a browser to preview it. No build step is required
 - To change prices, edit the two `price` blocks in `index.html` (currently `$50 AUD` and `$80 AUD`). The site also notes `+$10 AUD per additional pet on the same walk`.
 - To change wording, edit the text in the relevant section of `index.html`.
 - The Instagram CTA and handle currently point to `https://www.instagram.com/littlepaws.walks/` and `@littlepaws.walks` (account claimed).
-- Bookings are made through the Cal.com calendar embed (`#book`, https://cal.com/littlepawswalks). The "Contact us" form is for general enquiries: it opens an email draft to the placeholder address `littlepawswalks.26@gmail.com` with name, email, optional phone, and message. To replace the placeholder email later, search for `littlepawswalks.26@gmail.com` and update every occurrence in `index.html` and this README.
+- Bookings are made through the Cal.com calendar embed (`#book`, https://cal.com/littlepawswalks). The "Contact us" form is for general enquiries: it opens an email draft to `littlepawswalks.26@gmail.com` with name, email, optional phone, and message. To change the email later, search for `littlepawswalks.26@gmail.com` and update every occurrence in `index.html` and this README.
+- Images: each photo has a resized JPEG fallback plus WebP versions (`-600.webp`, `-1000.webp`) served via `<picture>`/`srcset`. If you swap a photo, regenerate all sizes.
+- SEO: title/description, LocalBusiness JSON-LD (bottom of `index.html`), `sitemap.xml` and `robots.txt`. Update `lastmod` in the sitemap when content changes.
 - Colours, spacing, and responsive breakpoints live in `styles.css`.
 
 ## Hosting

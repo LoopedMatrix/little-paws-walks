@@ -3,18 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Friendly dog walks around Boroondara. Little Paws Walks offers 30-minute and 1-hour walks in Melbourne's inner east.">
-  <title>Little Paws Walks | Dog walking in Boroondara</title>
+  <meta name="description" content="Friendly dog walks in Hawthorn, Kew, Camberwell, Balwyn, Glen Iris and across Boroondara. 30-minute walks $50, 1-hour walks $80. Book online.">
+  <title>Dog Walker in Hawthorn, Kew &amp; Boroondara | Little Paws Walks</title>
+  <link rel="preload" as="image" type="image/webp" href="assets/dog-on-walk-600.webp" imagesrcset="assets/dog-on-walk-600.webp 600w, assets/dog-on-walk-1000.webp 1000w" imagesizes="(min-width: 1020px) 490px, (min-width: 700px) 50vw, 100vw" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://app.cal.com" crossorigin>
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://littlepawswalks.au/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://littlepawswalks.au/">
-  <meta property="og:title" content="Little Paws Walks | Dog walking in Boroondara">
-  <meta property="og:description" content="Friendly dog walks around Boroondara. 30-minute and 1-hour walks in Melbourne's inner east.">
+  <meta property="og:title" content="Dog Walker in Hawthorn, Kew &amp; Boroondara | Little Paws Walks">
+  <meta property="og:site_name" content="Little Paws Walks">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:description" content="Friendly dog walks in Hawthorn, Kew, Camberwell, Balwyn, Glen Iris and across Boroondara. 30-minute walks $50, 1-hour walks $80. Book online.">
+  <meta property="og:image:alt" content="Smiling golden retriever looking at the camera">
   <meta property="og:image" content="https://littlepawswalks.au/assets/dog-on-walk.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#2f5946">
   <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
@@ -36,8 +42,8 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Dog walking in Boroondara</p>
-          <h1>Good walks.<br><span>Happy tails.</span></h1>
+          <h1 class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Dog walking in Hawthorn, Kew &amp; across Boroondara</h1>
+          <p class="hero-title">Good walks.<br><span>Happy tails.</span></p>
           <p class="hero-intro">Thoughtful dog walks for the leafy streets and parks of Melbourne's inner east. Book online below, or reach out on Instagram or email.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#book">Book a walk <span aria-hidden="true">↘</span></a>
@@ -47,7 +53,10 @@
         </div>
         <div class="hero-visual">
           <div class="hero-image-wrap">
-            <img src="assets/dog-on-walk.jpg" alt="A dog walking outdoors on a tree-lined suburban street" width="1400" height="1855">
+            <picture>
+              <source type="image/webp" srcset="assets/dog-on-walk-600.webp 600w, assets/dog-on-walk-1000.webp 1000w" sizes="(min-width: 1020px) 490px, (min-width: 700px) 50vw, 100vw">
+              <img src="assets/dog-on-walk.jpg" alt="Smiling golden retriever looking at the camera" width="1000" height="1325" fetchpriority="high" decoding="async">
+            </picture>
           </div>
           <div class="photo-note"><span class="photo-note-icon" aria-hidden="true">✦</span><span>Room to sniff<br><strong>time to be a dog</strong></span></div>
           <div class="hero-sticker" aria-hidden="true"><span>made for</span><strong>good<br>dogs</strong><span>♡</span></div>
@@ -62,7 +71,10 @@
           <h2>Small walks, <em>big</em> joy.</h2>
           <p>Little Paws Walks is a local dog-walking service for pups who love a little fresh air, a good sniff, and a calm companion by their side.</p>
           <p>Every walk goes at a pace that suits your dog. Reliable, friendly, and close to home in Boroondara.</p>
-          <img class="about-image" src="assets/happy-dog.jpg" alt="A happy dog sitting outdoors after a walk" width="1200" height="800" loading="lazy">
+          <picture>
+            <source type="image/webp" srcset="assets/happy-dog-600.webp 600w" sizes="300px">
+            <img class="about-image" src="assets/happy-dog.jpg" alt="Chocolate labrador licking its nose on a garden path" width="600" height="400" loading="lazy" decoding="async">
+          </picture>
           <a class="arrow-link" href="#book">Let's go for a walk <span aria-hidden="true">→</span></a>
         </div>
         <div class="about-aside">
@@ -103,15 +115,28 @@
 
     <section class="area section-pad" id="area">
       <div class="container area-grid">
-        <div class="area-image-wrap"><img src="assets/leafy-park.jpg" alt="Sunlight through a leafy green park" width="1400" height="932" loading="lazy"></div>
+        <div class="area-image-wrap"><picture><source type="image/webp" srcset="assets/leafy-park-600.webp 600w, assets/leafy-park-1000.webp 1000w" sizes="(min-width: 700px) 45vw, 100vw"><img src="assets/leafy-park.jpg" alt="Sunlit walking track through tall trees" width="1000" height="666" loading="lazy" decoding="async"></picture></div>
         <div class="area-copy">
           <div class="section-label">03 <span>Where we walk</span></div>
           <h2>Leafy streets,<br><em>local parks.</em></h2>
-          <p>Based in the City of Boroondara, Melbourne. We keep walks close to home and explore the green spaces your pup already knows and loves.</p>
+          <p>Based in the City of Boroondara, Melbourne. We keep walks close to home and explore the streets and green spaces your pup already knows and loves.</p>
           <div class="area-list" aria-label="Service area suburbs">
-            <span>Hawthorn</span><span>Kew</span><span>Camberwell</span><span>Canterbury</span><span>Surrey Hills</span><span>Balwyn</span><span>Glen Iris</span><span>Hawthorn East</span><span>Mont Albert</span><span>and nearby</span>
+            <span>Hawthorn</span><span>Hawthorn East</span><span>Kew</span><span>Kew East</span><span>Camberwell</span><span>Canterbury</span><span>Surrey Hills</span><span>Balwyn</span><span>Mont Albert</span><span>Glen Iris</span><span>and nearby</span>
           </div>
         </div>
+      </div>
+      <div class="container suburbs" id="suburbs">
+        <h3 class="suburbs-title">Suburbs we walk</h3>
+        <p class="suburbs-lede">Dog walking close to home, with a few of the local parks and reserves nearby.</p>
+        <div class="suburb-grid">
+          <div class="suburb-card"><h4>Hawthorn &amp; Hawthorn East</h4><p>Leafy side streets near Glenferrie and Auburn, with Grace Park, Fairview Park, Rathmines Reserve and the Yarra-side Wallen Road Reserve close by.</p></div>
+          <div class="suburb-card"><h4>Kew &amp; Kew East</h4><p>Quiet streets around Victoria Park, Hays Paddock and Willsmere Park, plus the Outer Circle Linear Park trail.</p></div>
+          <div class="suburb-card"><h4>Camberwell</h4><p>Tree-lined streets near Frog Hollow Reserve, Lynden Park and Willison Park.</p></div>
+          <div class="suburb-card"><h4>Canterbury &amp; Surrey Hills</h4><p>Wide, shady streets with Belmont Park, John August Reserve and Boroondara Park nearby.</p></div>
+          <div class="suburb-card"><h4>Balwyn &amp; Mont Albert</h4><p>Gentle routes around Beckett Park, Mont Albert Park and the King Street Chain reserves.</p></div>
+          <div class="suburb-card"><h4>Glen Iris</h4><p>Walks near Eric Raven Reserve, Nettleton Park Reserve and Hill &#8217;n&#8217; Dale Park.</p></div>
+        </div>
+        <p class="suburbs-note">Not sure if you&#8217;re in range? <a href="#contact">Get in touch</a> and we&#8217;ll let you know.</p>
       </div>
     </section>
 
@@ -140,7 +165,7 @@
           </div>
           <div class="faq-item">
             <h3>Which suburbs do you cover?</h3>
-            <p>We walk in the City of Boroondara and nearby — Hawthorn, Kew, Camberwell, Canterbury, Surrey Hills, Balwyn, Glen Iris, Hawthorn East, Mont Albert, and the streets around them.</p>
+            <p>We walk in the City of Boroondara and nearby: Hawthorn, Hawthorn East, Kew, Kew East, Camberwell, Canterbury, Surrey Hills, Balwyn, Mont Albert, Glen Iris, and the streets around them.</p>
           </div>
           <div class="faq-item">
             <h3>Do you walk more than one dog at a time?</h3>
@@ -182,7 +207,6 @@
               <a class="button button-outline" href="mailto:littlepawswalks.26@gmail.com">Email us <span aria-hidden="true">↗</span></a>
             </div>
             <a class="email-link" href="mailto:littlepawswalks.26@gmail.com">littlepawswalks.26@gmail.com</a>
-            <p class="email-note">Placeholder email — swap this address later.</p>
             <p class="handle">@littlepaws.walks</p>
           </div>
 
@@ -241,65 +265,137 @@
   </script>
   <script type="text/javascript">
     (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-    Cal("init", { origin: "https://app.cal.com" });
-    Cal("inline", {
-      elementOrSelector: "#cal-booking",
-      calLink: "littlepawswalks",
-      layout: "month_view",
-      config: { layout: "month_view" }
-    });
-    Cal("ui", { hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#2f5946" } } });
+    (function () {
+      var target = document.getElementById("cal-booking");
+      var started = false;
+      function loadCal() {
+        if (started) return;
+        started = true;
+        Cal("init", { origin: "https://app.cal.com" });
+        Cal("inline", {
+          elementOrSelector: "#cal-booking",
+          calLink: "littlepawswalks",
+          layout: "month_view",
+          config: { layout: "month_view" }
+        });
+        Cal("ui", { hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#2f5946" } } });
+      }
+      if (!target) return;
+      if ("IntersectionObserver" in window && location.hash !== "#book") {
+        var io = new IntersectionObserver(function (entries) {
+          if (entries.some(function (e) { return e.isIntersecting; })) { io.disconnect(); loadCal(); }
+        }, { rootMargin: "800px 0px" });
+        io.observe(target);
+      } else {
+        loadCal();
+      }
+    })();
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Little Paws Walks",
-    "description": "Dog walking service in the City of Boroondara, Melbourne.",
-    "url": "https://littlepawswalks.au/",
-    "serviceArea": {
-      "@type": "City",
-      "name": "Boroondara",
-      "address": {
-        "@type": "City",
-        "addressLocality": "Boroondara",
-        "addressRegion": "VIC",
-        "addressCountry": "AU"
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://littlepawswalks.au/#business",
+  "name": "Little Paws Walks",
+  "description": "Friendly local dog walking in Hawthorn, Kew, Camberwell and across the City of Boroondara, Melbourne. 30-minute and 1-hour walks.",
+  "url": "https://littlepawswalks.au/",
+  "email": "littlepawswalks.26@gmail.com",
+  "image": "https://littlepawswalks.au/assets/dog-on-walk.jpg",
+  "priceRange": "$50–$80",
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "City of Boroondara, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Hawthorn, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Hawthorn East, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Kew, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Kew East, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Camberwell, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Canterbury, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Surrey Hills, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Balwyn, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Mont Albert, VIC"
+    },
+    {
+      "@type": "Place",
+      "name": "Glen Iris, VIC"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/littlepaws.walks/"
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": "https://cal.com/littlepawswalks"
+  },
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "30-minute dog walk",
+      "price": "50",
+      "priceCurrency": "AUD",
+      "url": "https://littlepawswalks.au/#book",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "30-minute dog walk",
+        "serviceType": "Dog walking",
+        "description": "A refreshing neighbourhood wander with time to sniff, stretch, and reset."
       }
     },
-    "areaServed": ["Hawthorn", "Kew", "Camberwell", "Canterbury", "Surrey Hills", "Balwyn", "Glen Iris", "Hawthorn East", "Mont Albert"],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Dog walk options",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "30-minute dog walk",
-            "description": "A refreshing neighbourhood wander with time to sniff, stretch, and reset."
-          },
-          "price": "50",
-          "priceCurrency": "AUD",
-          "duration": "PT30M"
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "1-hour dog walk",
-            "description": "A longer outing for curious pups who like to take the scenic route."
-          },
-          "price": "80",
-          "priceCurrency": "AUD",
-          "duration": "PT1H"
-        }
-      ]
+    {
+      "@type": "Offer",
+      "name": "1-hour dog walk",
+      "price": "80",
+      "priceCurrency": "AUD",
+      "url": "https://littlepawswalks.au/#book",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "1-hour dog walk",
+        "serviceType": "Dog walking",
+        "description": "A longer outing for curious pups who like to take the scenic route."
+      }
     },
-    "priceRange": "$$",
-    "image": "https://littlepawswalks.au/assets/dog-on-walk.jpg",
-    "knowsAbout": ["Dog walking", "Dog care", "Pet services", "Boroondara", "Melbourne inner east"]
-  }
+    {
+      "@type": "Offer",
+      "name": "Additional dog on the same walk",
+      "price": "10",
+      "priceCurrency": "AUD",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Additional dog",
+        "serviceType": "Dog walking",
+        "description": "Each extra dog joining the same walk."
+      }
+    }
+  ]
+}
   </script>
 </body>
 </html>
