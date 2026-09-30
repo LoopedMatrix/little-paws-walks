@@ -18,9 +18,11 @@ Open `index.html` directly in a browser to preview it. No build step is required
 - Bookings are made through the Cal.com calendar embed (`#book`, https://cal.com/littlepawswalks). The "Contact us" form is for general enquiries: it opens an email draft to the placeholder address `hello@littlepawswalks.com` with name, email, optional phone, and message. To replace the placeholder email later, search for `hello@littlepawswalks.com` and update every occurrence in `index.html` and this README.
 - Colours, spacing, and responsive breakpoints live in `styles.css`.
 
-## Hosting later
+## Hosting
 
-This is plain HTML/CSS and can later be hosted on any static host (for example, GitHub Pages, Netlify, Cloudflare Pages, or a basic web server). Upload the contents of this folder with `index.html` at the site root.
+Live at https://littlepawswalks.au/ (GitHub Pages from `main`, custom domain set via the `CNAME` file; `www` redirects to the apex). DNS is managed at VentraIP: four A records for `@` → 185.199.108.153 / 109 / 110 / 111 and `www` CNAME → loopedmatrix.github.io.
+
+This is plain HTML/CSS, so it can also be hosted on any static host with `index.html` at the site root.
 
 ## Photo attributions
 
