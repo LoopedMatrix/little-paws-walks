@@ -45,7 +45,7 @@
         </div>
         <div class="hero-visual">
           <div class="hero-image-wrap">
-            <img src="assets/dog-on-walk.jpg" alt="A dog walking outdoors on a tree-lined suburban street" width="1400" height="933">
+            <img src="assets/dog-on-walk.jpg" alt="A dog walking outdoors on a tree-lined suburban street" width="1400" height="1855">
           </div>
           <div class="photo-note"><span class="photo-note-icon" aria-hidden="true">✦</span><span>Room to sniff<br><strong>time to be a dog</strong></span></div>
           <div class="hero-sticker" aria-hidden="true"><span>made for</span><strong>good<br>dogs</strong><span>♡</span></div>
@@ -60,8 +60,8 @@
           <h2>Small walks, <em>big</em> joy.</h2>
           <p>Little Paws Walks is a local dog-walking service for pups who love a little fresh air, a good sniff, and a calm companion by their side.</p>
           <p>Every walk is one on one, with a pace that suits your dog. Reliable, friendly, and close to home in Boroondara.</p>
-          <img class="about-image" src="assets/happy-dog.jpg" alt="A happy dog sitting outdoors after a walk" width="720" height="480" loading="lazy">
-          <a class="arrow-link" href="#contact">Let's go for a walk <span aria-hidden="true">→</span></a>
+          <img class="about-image" src="assets/happy-dog.jpg" alt="A happy dog sitting outdoors after a walk" width="1200" height="800" loading="lazy">
+          <a class="arrow-link" href="#book">Let's go for a walk <span aria-hidden="true">→</span></a>
         </div>
         <div class="about-aside">
           <span class="aside-paw" aria-hidden="true">✿</span>
@@ -101,7 +101,7 @@
 
     <section class="area section-pad" id="area">
       <div class="container area-grid">
-        <div class="area-image-wrap"><img src="assets/leafy-park.jpg" alt="Sunlight through a leafy green park" width="1400" height="933" loading="lazy"></div>
+        <div class="area-image-wrap"><img src="assets/leafy-park.jpg" alt="Sunlight through a leafy green park" width="1400" height="932" loading="lazy"></div>
         <div class="area-copy">
           <div class="section-label">03 <span>Where we walk</span></div>
           <h2>Leafy streets,<br><em>local parks.</em></h2>
@@ -146,7 +146,7 @@
           </div>
           <div class="faq-item">
             <h3>How do I book a walk?</h3>
-            <p>Pick a walk and a time in the booking calendar and pay online. Patrick will confirm your walk. If he can't take it, you'll get a full refund. Prefer to chat first? Message us on Instagram or use the contact form.</p>
+            <p>Pick a walk and a time in the booking calendar and pay online. We'll confirm your walk. If we can't take it, you'll get a full refund. Prefer to chat first? Message us on Instagram or use the contact form.</p>
           </div>
         </div>
       </div>
@@ -159,9 +159,9 @@
             <div class="section-label">06 <span>Book a walk</span></div>
             <h2>Pick a <em>time.</em></h2>
           </div>
-          <p class="section-lede">Choose a 30-minute ($50) or 1-hour ($80) one on one walk, pick a time, and pay securely online. Extra pets are +$10 each, and Patrick will send a separate invoice for them.</p>
+          <p class="section-lede">Choose a 30-minute ($50) or 1-hour ($80) one on one walk, pick a time, and pay securely online. Extra pets are +$10 each.</p>
         </div>
-        <p class="book-note"><span class="note-check" aria-hidden="true">✓</span> You pay when you book. Your walk is a request until Patrick confirms it. If he can't take it, you'll get a full refund.</p>
+        <p class="book-note"><span class="note-check" aria-hidden="true">✓</span> You pay when you book. Your walk is a request until we confirm it. If we can't take it, you'll get a full refund.</p>
         <div class="cal-embed" id="cal-booking" aria-label="Booking calendar"></div>
         <p class="book-fallback">Calendar not loading? <a href="https://cal.com/littlepawswalks" target="_blank" rel="noopener noreferrer">Book on cal.com/littlepawswalks ↗</a> or <a href="#contact">get in touch</a>.</p>
       </div>
@@ -172,9 +172,9 @@
         <div class="contact-paws" aria-hidden="true">✦ &nbsp; ♡ &nbsp; ✦</div>
         <div class="contact-layout">
           <div class="contact-copy">
-            <div class="section-label">07 <span>Come say hello</span></div>
-            <h2>Ready for a<br><em>better walk?</em></h2>
-            <p>Send a message on Instagram or use the form to tell us about your pets, your suburb, and how we can personalise the walk for them.</p>
+            <div class="section-label">07 <span>Contact us</span></div>
+            <h2>Got a<br><em>question?</em></h2>
+            <p>For general enquiries, send a message on Instagram or use the form. To book a walk, use the <a href="#book">booking calendar</a> above.</p>
             <div class="contact-options">
               <a class="button button-light" href="https://www.instagram.com/littlepaws.walks/" target="_blank" rel="noopener noreferrer">Message @littlepaws.walks <span aria-hidden="true">↗</span></a>
               <a class="button button-outline" href="mailto:hello@littlepawswalks.com">Email us <span aria-hidden="true">↗</span></a>
@@ -184,7 +184,7 @@
             <p class="handle">@littlepaws.walks</p>
           </div>
 
-          <form class="booking-form" id="booking-form">
+          <form class="booking-form" id="contact-form" aria-label="Contact us">
             <div class="form-row">
               <label for="name">Your name</label>
               <input id="name" name="name" type="text" autocomplete="name" required>
@@ -194,68 +194,15 @@
               <input id="email" name="email" type="email" autocomplete="email" required>
             </div>
             <div class="form-row">
-              <label for="suburb">Suburb</label>
-              <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required>
+              <label for="phone">Phone <span>(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
             </div>
             <div class="form-row">
-              <label for="pet-names">Pet name(s)</label>
-              <input id="pet-names" name="pet-names" type="text" placeholder="Buddy, or Buddy &amp; Luna" required>
-            </div>
-            <div class="form-row form-row-half">
-              <div>
-                <label for="ages">Age(s)</label>
-                <input id="ages" name="ages" type="text" placeholder="e.g. 4 years, 2 years" required>
-              </div>
-              <div>
-                <label for="favourite-snacks">Favourite snacks <span>(optional)</span></label>
-                <input id="favourite-snacks" name="favourite-snacks" type="text" placeholder="Chicken, treats...">
-              </div>
-            </div>
-            <div class="form-row form-row-half">
-              <div>
-                <label for="walk-length">Walk length</label>
-                <select id="walk-length" name="walk-length" required>
-                  <option value="" selected disabled>Select a walk length</option>
-                  <option value="30 minutes">30 minutes</option>
-                  <option value="1 hour">1 hour</option>
-                </select>
-              </div>
-              <div>
-                <label for="preferred-date">Preferred day</label>
-                <input id="preferred-date" name="preferred-date" type="date" required>
-              </div>
-            </div>
-            <div class="form-row form-row-half">
-              <div>
-                <label for="preferred-time">Preferred walk time</label>
-                <select id="preferred-time" name="preferred-time" required>
-                  <option value="" selected disabled>Choose a time</option>
-                  <option value="8:00 AM">8:00 AM</option>
-                  <option value="9:00 AM">9:00 AM</option>
-                  <option value="10:00 AM">10:00 AM</option>
-                  <option value="11:00 AM">11:00 AM</option>
-                  <option value="12:00 PM">12:00 PM</option>
-                  <option value="1:00 PM">1:00 PM</option>
-                  <option value="2:00 PM">2:00 PM</option>
-                  <option value="3:00 PM">3:00 PM</option>
-                  <option value="4:00 PM">4:00 PM</option>
-                  <option value="5:00 PM">5:00 PM</option>
-                  <option value="6:00 PM">6:00 PM</option>
-                  <option value="Flexible">Flexible</option>
-                </select>
-              </div>
-              <div>
-                <label for="extra-pets">Extra pets <span>(optional, beyond the first)</span></label>
-                <input id="extra-pets" name="extra-pets" type="number" min="0" step="1" placeholder="0">
-              </div>
-            </div>
-            <div class="form-row">
-              <label for="message">Message <span>(optional)</span></label>
-              <textarea id="message" name="message" rows="4" placeholder="Anything that will help us personalise the walk?"></textarea>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
             </div>
             <button class="button button-light form-submit" type="submit">Open email draft <span aria-hidden="true">↗</span></button>
-            <p class="form-note">+$10 per additional pet on the same walk.</p>
-            <p class="form-note">Your email app will open with the details filled in.</p>
+            <p class="form-note">Your email app will open with your message filled in.</p>
           </form>
         </div>
       </div>
@@ -274,26 +221,15 @@
 
   <script>
     (function () {
-      const dateInput = document.getElementById('preferred-date');
-      if (dateInput) {
-        dateInput.min = new Date().toISOString().split('T')[0];
-      }
-      document.getElementById('booking-form').addEventListener('submit', function (event) {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         const name = data.get('name');
-        const subject = `Booking enquiry from ${name || 'Little Paws Walks website'}`;
+        const subject = `Enquiry from ${name || 'Little Paws Walks website'}`;
         const body = [
           `Name: ${name}`,
           `Email: ${data.get('email')}`,
-          `Suburb: ${data.get('suburb')}`,
-          `Pet name(s): ${data.get('pet-names')}`,
-          `Age(s): ${data.get('ages')}`,
-          `Favourite snacks: ${data.get('favourite-snacks') || ''}`,
-          `Preferred day: ${data.get('preferred-date') || ''}`,
-          `Preferred walk time: ${data.get('preferred-time')}`,
-          `Walk length: ${data.get('walk-length')}`,
-          `Extra pets: ${data.get('extra-pets') || '0'}`,
+          `Phone: ${data.get('phone') || ''}`,
           '',
           `Message: ${data.get('message') || ''}`
         ].join('\n');
