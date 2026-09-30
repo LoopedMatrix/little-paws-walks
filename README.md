@@ -15,7 +15,7 @@ Open `index.html` directly in a browser to preview it. No build step is required
 - To change prices, edit the two `price` blocks in `index.html` (currently `$50 AUD` and `$80 AUD`). The site also notes `+$10 AUD per additional pet on the same walk`.
 - To change wording, edit the text in the relevant section of `index.html`.
 - The Instagram CTA and handle currently point to `https://www.instagram.com/littlepaws.walks/` and `@littlepaws.walks` (account claimed).
-- Bookings are made through the Cal.com calendar embed (`#book`, https://cal.com/littlepawswalks). The "Contact us" form is for general enquiries: it opens an email draft to the placeholder address `hello@littlepawswalks.com` with name, email, optional phone, and message. To replace the placeholder email later, search for `hello@littlepawswalks.com` and update every occurrence in `index.html` and this README.
+- Bookings are made through the Cal.com calendar embed (`#book`, https://cal.com/littlepawswalks). The "Contact us" form is for general enquiries: it opens an email draft to the placeholder address `littlepawswalks.26@gmail.com` with name, email, optional phone, and message. To replace the placeholder email later, search for `littlepawswalks.26@gmail.com` and update every occurrence in `index.html` and this README.
 - Colours, spacing, and responsive breakpoints live in `styles.css`.
 
 ## Hosting
