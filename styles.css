@@ -186,6 +186,9 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
 .booking-form textarea { min-height: 100px; resize: vertical; }
 .form-submit { width: 100%; border: 0; cursor: pointer; }
 .form-note { margin: 11px 0 0; color: var(--muted); font-size: 10px; text-align: center; }
+.form-copy { display: inline; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; cursor: pointer; }
+.form-copy:hover, .form-copy:focus-visible { color: var(--ink); }
+.form-copied { color: var(--green); font-weight: 800; }
 .contact-paws { position: absolute; top: 20px; right: 23px; color: rgba(217,239,155,.65); font-size: 18px; transform: rotate(13deg); }
 
 .site-footer { padding: 35px 0 95px; background: var(--paper); }

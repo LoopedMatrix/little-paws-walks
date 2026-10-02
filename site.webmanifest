@@ -1,7 +1,7 @@
 {
   "name": "Little Paws Walks",
   "short_name": "Little Paws",
-  "description": "One on one dog walking in the City of Boroondara, Melbourne.",
+  "description": "Local dog walking in the City of Boroondara, Melbourne — 30-minute and 1-hour walks.",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#2f5946",
@@ -11,7 +11,25 @@
       "src": "favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
