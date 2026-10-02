@@ -36,7 +36,7 @@ a { color: inherit; }
 .hero picture, .area-image-wrap picture { display: block; }
 .eyebrow-dot { width: 7px; height: 7px; background: var(--peach); border-radius: 50%; }
 h1, h2, h3, p { margin-top: 0; }
-.hero-title { max-width: 620px; margin-top: 0; line-height: .89; margin-bottom: 21px; font-size: clamp(3.65rem, 16vw, 6.8rem); font-weight: 800; letter-spacing: -.09em; line-height: .89; }
+.hero-title { max-width: 620px; margin-top: 0; line-height: .89; margin-bottom: 21px; font-size: clamp(3.65rem, 16vw, 6.8rem); font-weight: 800; letter-spacing: -.09em; }
 .hero-title span, h2 em { color: var(--green); font-family: var(--serif); font-weight: 400; letter-spacing: -.07em; }
 .hero-intro { max-width: 420px; margin-bottom: 28px; color: var(--muted); font-size: 17px; line-height: 1.55; }
 .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 19px; }
@@ -237,4 +237,9 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
   .hero-sticker { right: -36px; }
   .suburb-grid { grid-template-columns: repeat(3, 1fr); }
   .hero-title { font-size: 6.6rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
 }
