@@ -27,6 +27,13 @@ a { color: inherit; }
 .brand em { color: var(--green); font-family: var(--serif); font-size: 17px; font-weight: 600; }
 .brand-mark { display: grid; place-items: center; width: 31px; height: 31px; background: var(--peach); border-radius: 50%; }
 .brand-mark svg { width: 22px; height: 22px; fill: var(--ink); }
+.nav-wrap { flex-wrap: wrap; column-gap: 16px; }
+.main-nav { display: flex; gap: 16px; font-size: 12px; font-weight: 750; }
+.main-nav a, .footer-nav a { color: inherit; text-decoration: none; padding: 12px 0; }
+.main-nav a:hover, .footer-nav a:hover, .main-nav a:focus-visible { text-decoration: underline; }
+.footer-grid > p { line-height: 2.2; }
+.footer-grid > p a { color: var(--green); display: inline-block; padding: 6px 0; line-height: 1.4; }
+.footer-nav { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; font-weight: 750; color: var(--green); }
 .nav-cta { display: none; font-size: 12px; font-weight: 750; text-decoration: none; }
 .nav-cta .ig-icon { vertical-align: -2px; margin-right: 5px; }
 
@@ -203,6 +210,7 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
 .sticky-cta span { color: var(--lime); font-size: 16px; }
 
 @media (min-width: 700px) {
+  .main-nav { margin-left: auto; margin-right: 12px; gap: 22px; }
   .container { width: min(1120px, calc(100% - 80px)); }
   .nav-cta { display: inline-block; padding: 9px 0; border-bottom: 1px solid var(--ink); }
   .hero { padding-top: 150px; }
