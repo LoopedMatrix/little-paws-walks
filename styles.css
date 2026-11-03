@@ -299,3 +299,4 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
   .service-cards { grid-template-columns: repeat(3, 1fr); }
 }
 @media (min-width: 1020px) { .hero-title { font-size: 4.6rem; } }
+.service-card-extra p { opacity: 1; }
