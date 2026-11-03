@@ -370,9 +370,9 @@
           elementOrSelector: "#cal-booking",
           calLink: "littlepawswalks",
           layout: "month_view",
-          config: { layout: "month_view" }
+          config: { layout: "month_view", theme: "light" }
         });
-        Cal("ui", { hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#2f5946" } } });
+        Cal("ui", { hideEventTypeDetails: false, layout: "month_view", theme: "light", styles: { branding: { brandColor: "#2f5946" } }, cssVarsPerTheme: { light: { "cal-brand": "#2f5946", "cal-brand-emphasis": "#1f3e31", "cal-brand-text": "#ffffff", "cal-bg": "#fffdf8", "cal-bg-emphasis": "#efe8da", "cal-bg-subtle": "#f6f2e9", "cal-bg-muted": "#f6f2e9", "cal-text": "#1d2b26", "cal-text-emphasis": "#1d2b26", "cal-border": "#e4dccb", "cal-border-subtle": "#ece5d6", "cal-border-booker": "#e4dccb", "cal-radius": "12px" } } });
       }
       if (!target) return;
       if ("IntersectionObserver" in window && location.hash !== "#book") {
