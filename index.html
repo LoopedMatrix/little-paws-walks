@@ -50,7 +50,7 @@
         <a href="#faq">FAQ</a>
         <a href="#book">Book</a>
       </nav>
-      <a class="nav-cta" href="https://ig.me/m/littlepaws.walks" target="_blank" rel="noopener noreferrer"><svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg> Message on Instagram <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" href="#book">Book a walk <span aria-hidden="true">↘</span></a>
     </div>
   </header>
 
@@ -58,9 +58,14 @@
     <section class="hero" id="top">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1 class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Dog walking in Hawthorn, Kew &amp; across Boroondara</h1>
-          <p class="hero-title">Good walks.<br><span>Happy tails.</span></p>
+          <h1 class="hero-title">Dog walking in Hawthorn, Kew &amp; across <span>Boroondara</span></h1>
+          <p class="hero-tagline"><span class="eyebrow-dot" aria-hidden="true"></span> Good walks. <em>Happy tails.</em></p>
           <p class="hero-intro">Thoughtful dog walks for the leafy streets and parks of Melbourne's inner east. Book online below, or reach out on Instagram or email.</p>
+          <ul class="price-pills" aria-label="Prices">
+            <li><span>30 min</span><strong>$50</strong></li>
+            <li><span>1 hour</span><strong>$80</strong></li>
+            <li><span>Extra dog</span><strong>+$10</strong></li>
+          </ul>
           <div class="hero-actions">
             <a class="button button-primary" href="#book">Book a walk <span aria-hidden="true">↘</span></a>
             <a class="text-link" href="#services">See walk options <span aria-hidden="true">↓</span></a>
@@ -77,6 +82,17 @@
           <div class="photo-note"><span class="photo-note-icon" aria-hidden="true">✦</span><span>Room to sniff<br><strong>time to be a dog</strong></span></div>
           <div class="hero-sticker" aria-hidden="true"><span>made for</span><strong>good<br>dogs</strong><span>♡</span></div>
         </div>
+      </div>
+    </section>
+
+    <section class="steps" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <h2 class="steps-title" id="how-title">How booking works</h2>
+        <ol class="steps-list">
+          <li><span class="step-num" aria-hidden="true">1</span><h3>Pick a walk</h3><p>Choose a 30-minute ($50) or 1-hour ($80) walk. Extra pets are +$10 each.</p></li>
+          <li><span class="step-num" aria-hidden="true">2</span><h3>Pick a time &amp; pay</h3><p>Pick a time in the booking calendar and pay securely online.</p></li>
+          <li><span class="step-num" aria-hidden="true">3</span><h3>We confirm</h3><p>Your walk is a request until we confirm it. If we can't take it, you'll get a full refund.</p></li>
+        </ol>
       </div>
     </section>
 
@@ -115,17 +131,24 @@
             <h3>30-minute<br>dog walk</h3>
             <p>A refreshing neighbourhood wander with time to sniff, stretch, and reset.</p>
             <div class="price"><strong>$50</strong><span>AUD</span></div>
-            <a class="card-link" href="#book">Book this walk <span aria-hidden="true">→</span></a>
+            <a class="button card-button" href="#book">Book this walk <span aria-hidden="true">↘</span></a>
           </article>
           <article class="service-card service-card-dark">
             <div class="service-top"><span class="service-number">02</span><span class="service-icon" aria-hidden="true">✦</span></div>
             <h3>1-hour<br>dog walk</h3>
             <p>A longer outing for curious pups who like to take the scenic route.</p>
             <div class="price"><strong>$80</strong><span>AUD</span></div>
-            <a class="card-link" href="#book">Book this walk <span aria-hidden="true">→</span></a>
+            <a class="button card-button" href="#book">Book this walk <span aria-hidden="true">↘</span></a>
+          </article>
+          <article class="service-card service-card-extra">
+            <div class="service-top"><span class="service-number">03</span><span class="service-icon" aria-hidden="true">♡</span></div>
+            <h3>Extra<br>dogs</h3>
+            <p>More than one dog? They can join the same walk.</p>
+            <div class="price"><strong>+$10</strong><span>AUD per additional pet</span></div>
+            <a class="button card-button" href="#book">Book a walk <span aria-hidden="true">↘</span></a>
           </article>
         </div>
-        <p class="pricing-note"><strong>+$10 AUD per additional pet on the same walk.</strong> Message us on Instagram or email hello@littlepawswalks.au to check availability.</p>
+        <p class="pricing-note">Prices are per walk, in AUD. Message us on Instagram or email hello@littlepawswalks.au to check availability.</p>
       </div>
     </section>
 
@@ -175,26 +198,26 @@
         <div class="section-label">05 <span>Questions, answered</span></div>
         <h2>Good questions.<br><em>straight answers.</em></h2>
         <div class="faq-grid">
-          <div class="faq-item">
-            <h3>How much does a dog walk cost in Boroondara?</h3>
+          <details class="faq-item" open>
+            <summary><h3>How much does a dog walk cost in Boroondara?</h3></summary>
             <p>A 30-minute walk is $50 AUD and a 1-hour walk is $80 AUD, per dog. An additional pet on the same walk is $10 AUD each.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Which suburbs do you cover?</h3>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Which suburbs do you cover?</h3></summary>
             <p>We walk in the City of Boroondara and nearby: Hawthorn, Hawthorn East, Kew, Kew East, Camberwell, Canterbury, Surrey Hills, Balwyn, Mont Albert, Glen Iris, and the streets around them.</p>
-          </div>
-          <div class="faq-item">
-            <h3>Do you walk more than one dog at a time?</h3>
+          </details>
+          <details class="faq-item">
+            <summary><h3>Do you walk more than one dog at a time?</h3></summary>
             <p>Yes. If you have more than one dog, they can join the same walk for an extra $10 AUD each.</p>
-          </div>
-          <div class="faq-item">
-            <h3>How do I book a walk?</h3>
+          </details>
+          <details class="faq-item">
+            <summary><h3>How do I book a walk?</h3></summary>
             <p>Pick a walk and a time in the booking calendar and pay online. We'll confirm your walk. If we can't take it, you'll get a full refund. Prefer to chat first? Message us on Instagram or use the contact form.</p>
-          </div>
-          <div class="faq-item">
-            <h3>What is the cancellation policy?</h3>
+          </details>
+          <details class="faq-item">
+            <summary><h3>What is the cancellation policy?</h3></summary>
             <p>Free cancellation up to 2 days before your walk. Cancellations within 2 days aren't refunded. If we can't take your booking, you'll get a full refund.</p>
-          </div>
+          </details>
         </div>
       </div>
     </section>
@@ -273,7 +296,7 @@
     </div>
   </footer>
 
-  <div class="sticky-cta"><a href="#book">Book a walk <span aria-hidden="true">↘</span></a></div>
+  <div class="sticky-cta"><a href="#book"><span class="sticky-from">From $50</span> Book a walk <span aria-hidden="true">↘</span></a></div>
 
   <script>
     (function () {

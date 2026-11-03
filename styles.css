@@ -258,3 +258,44 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+/* layout v2 (draft/layout-v2-2026-11-03) */
+.hero-title { font-family: var(--sans); font-size: clamp(2.6rem, 11vw, 4.6rem); line-height: .98; letter-spacing: -.06em; font-weight: 800; }
+.hero-tagline { display: flex; align-items: center; gap: 9px; margin: 0 0 16px; font-family: var(--serif); font-size: 24px; color: var(--ink); }
+.hero-tagline em { color: var(--green); }
+.price-pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 24px; padding: 0; list-style: none; }
+.price-pills li { display: flex; flex-direction: column; min-width: 86px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); }
+.price-pills span { color: var(--muted); font-size: 11px; font-weight: 700; }
+.price-pills strong { color: var(--green); font-size: 22px; letter-spacing: -.05em; line-height: 1.1; }
+.nav-cta { padding: 10px 16px !important; border: 0 !important; border-radius: 999px; background: var(--green); color: var(--paper); }
+.nav-cta:hover, .nav-cta:focus-visible { background: var(--green-deep); }
+.steps { padding: 44px 0; background: var(--lime); }
+.steps-title { margin: 0 0 18px; font-size: 22px; letter-spacing: -.04em; }
+.steps-list { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
+.steps-list li { display: grid; grid-template-columns: 34px 1fr; column-gap: 12px; }
+.step-num { grid-row: span 2; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--green-deep); color: var(--paper); font-weight: 800; }
+.steps-list h3 { margin: 4px 0 2px; font-size: 16px; letter-spacing: -.03em; }
+.steps-list p { margin: 0; color: var(--ink); font-size: 14px; }
+.about.section-pad, .area.section-pad { padding: 64px 0; }
+.about-image { margin: 20px 0; }
+.service-card { min-height: 0; }
+.service-card h3 { margin-top: 30px; }
+.service-card-extra { background: var(--peach); color: var(--ink); }
+.card-button { margin-top: 22px; align-self: flex-start; background: var(--paper); color: var(--ink); }
+.service-card-dark .card-button { background: var(--lime); }
+.suburbs { margin-top: 40px; }
+.suburb-card { padding: 16px; }
+.faq-grid { align-items: start; }
+.faq-item summary { display: flex; justify-content: space-between; align-items: center; gap: 12px; cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; flex: none; color: var(--green); font-size: 22px; line-height: 1; }
+.faq-item[open] summary::after { content: "–"; }
+.faq-item summary h3 { margin: 0; }
+.faq-item summary:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
+.faq-item p { margin-top: 10px; }
+.sticky-cta .sticky-from { color: var(--lime); font-size: 13px; font-weight: 700; }
+@media (min-width: 700px) {
+  .steps-list { grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .service-cards { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1020px) { .hero-title { font-size: 4.6rem; } }
