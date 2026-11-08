@@ -258,3 +258,8 @@ h2 { margin-bottom: 20px; font-size: clamp(2.65rem, 10vw, 5.5rem); letter-spacin
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
 }
+
+.referral-block { margin-top: 28px; padding: 20px 24px; background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--peach); border-radius: 3px; }
+.referral-block h3 { margin: 0 0 6px; font-size: 18px; }
+.referral-block h3 em { color: var(--green); font-family: var(--serif); font-weight: 400; }
+.referral-block p { margin: 0; color: var(--muted); font-size: 14px; }
